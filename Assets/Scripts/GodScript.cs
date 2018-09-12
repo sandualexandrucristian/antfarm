@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GodScript : MonoBehaviour {
 
-    bool paused = true;
+    public bool paused = true;
 
 	// Use this for initialization
 	void Start () {
@@ -17,5 +17,8 @@ public class GodScript : MonoBehaviour {
 	}
 	public void pausUnpause(){
 		this.paused = !this.paused;
+	}
+	public bool getPauseStatus(){
+		return paused;
 	}
 }
